@@ -1,0 +1,636 @@
+/* --------- BASIC SETUP ----------------  */
+
+
+/* #2E5775 blue color */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    color: #555;
+    font-size: 30px;
+    font-family: 'Cairo', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    max-width: 1140px;
+    margin: auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+h1{
+    font-weight: 300;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color:#2E5775;
+    content: " ";
+    width:100px;
+    margin:0 auto;
+    margin-top: 10px;
+}
+
+h3{
+    font-size: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+h3:after{
+    display: block;
+    height: 2px;
+    background-color:green;
+    content: " ";
+    width:100px;
+    margin:0 auto;
+    margin-top: 10px;
+}
+
+h4{
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+h4:after{
+    display: block;
+    height: 2px;
+    background-color:green;
+    content: " ";
+    width:100px;
+    margin-top: 10px;
+}
+
+p{
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 70%;
+}
+
+.long-copy{
+    width: 70%;
+    margin-left: 15%;
+}
+/* ---------------------------------------- */
+
+
+/* ------------- NAV BAR ------------------ */
+
+.logo{
+    position: fixed;
+    float: left;
+    margin: 20px 36px;
+    padding: 2px;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 90;
+    color: white;
+}
+.navbar ul{
+    /* background-color: white; */
+    list-style: none;
+    overflow: hidden;
+    color: black;
+    padding: 0;
+    text-align: end;
+    margin: 0;
+    transition: 1s;
+}
+
+.navbar.black ul{
+    background-color: white;
+    width: 100%;
+}
+
+
+.navbar li a{
+    color: white;
+    font-size: 100%;
+}
+
+/* .navbar li a{
+    color: white;
+} */
+
+.navbar.black ul li a{
+    color: black;
+}
+
+.navbar.black ul li a:hover{
+    width: 100%;
+    border-bottom: 2px solid transparent;
+    
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 30px;
+    font-size: 60%;
+}
+
+
+
+.menu-icon{
+    width: 100%;
+    background: white;
+    text-align: right;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 60px;
+}
+
+
+
+.navbar li a:link,
+.navbar li a:visited {
+    padding: 8px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+/* .navbar li a:hover,
+.navbar li a:active {
+    border-bottom: 2px solid green;
+} */
+
+
+/* To the top button */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #2E5775;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+  }
+
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("img/Hero\ image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+} 
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 70%;
+    left: 60%;
+    transform: translate(-70%, -60%);
+}
+
+.hero-text-box p{
+    color: white;
+    font-size: 100%;
+    font-weight: 100;
+}
+
+.btn:link,
+.btn:visited{
+    margin-top: 2%;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s border 0.2s color 0.2s;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #2E5775;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid rgb(57, 108, 144);
+    color:white;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: #2E5775;
+    color: #fff;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #2E5775;
+    border: 1px solid #2E5775;
+    color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    background-color: rgb(57, 108, 144);
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 20px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+
+/* ------------- Home page ----------------- */
+
+
+.home{
+    padding-bottom: 40px;
+}
+
+.long-text{
+    text-align: center;
+    font-style: italic;
+    font-size: 80%;
+}
+
+/* ----------------------------------------- */
+
+
+iframe{
+    width: 100%;
+    height: 600px;
+}
+
+/* ----------------------------------------- */
+
+
+/* ------------- research-section ------------------ */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a0d2eb;;
+    color: black;
+  }
+
+  
+  .flip-card-back {
+    padding: 10px;
+    text-align: left;
+    background-color: #2E5775;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back a{
+      font-size: 70%;
+      text-decoration: none;
+      color: white;
+  }
+
+  .flip-card-back p{
+      line-height: 30px;
+  }
+
+
+  .pictures{
+    padding: 10px;
+    background-color: rgb(235, 235, 235);
+}
+.pictures img{
+    width: 100%;
+}
+/* ----------------------------------------- */
+
+
+/* ------------- Training ------------------ */
+
+.box{
+    padding: 1%;
+    width: 500px;
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+span a:link,
+span a:visited{
+    text-decoration: none;
+    color: green;
+}
+
+span a:hover,
+span a:active{
+    text-decoration: none;
+    color: #2E5775;
+    border-bottom: 2px solid #2E5775;
+    transition: color 0.2s  border-bottom 0.2s;
+}
+
+
+span a{
+    text-decoration: none;
+    font-size: 70%;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Footer  */
+
+footer{
+    background-color: #2E5775;
+    color: white;
+}
+
+.footer-points{
+    list-style: none;
+}
+
+.footer-points li{
+   display: block; 
+   text-align: left;
+   margin-bottom: 10px;
+}
+
+.footer-points li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 70%;
+}
+
+.footer-address{
+    text-align: left;
+    font-size: 70%;
+    line-height: 32px;
+}
+
+.social-icons{
+    margin-top: 50px;
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.social-icons li:last-child{
+    margin-right: 0;
+}
+
+.social-icons li a:link,
+.social-icons li a:visited{
+    text-decoration: none;
+    border: none;
+    color: #888;
+    transition: color 0.5s;
+}
+
+.social-icons li a:hover,
+.social-icons li a:active{
+    color: #fff;
+
+}
+
+.social-icons li a:link,
+.social-icons li a:visited{
+    font-size: 150%;
+}
+
+.fa-twitter,
+.fa-facebook-official,
+.fa-google-plus-official,
+.fa-instagram{
+    transition: color 0.2s;
+}
+
+
+.fa-twitter:hover{
+   color: #55acee;
+
+}
+
+.fa-facebook-official:hover{
+    color: #3b5999;
+}
+.fa-google-plus-official:hover{
+    color: #dd4b39;
+}
+.fa-instagram:hover{
+    color: #e4405f;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 60%;
+}
+
+/* -------- */
+
+
+@media(max-width: 580px){  
+
+    iframe{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .hero-text-box{
+        padding: 0 2%;
+        width: 100%;
+    }
+
+    .row{
+        padding: 0 2%;
+    }
+    .logo{
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+
+    nav ul{
+        background-color: white;
+        max-height: 0px;
+    }
+
+    nav.black ul{
+        color: white;
+    }
+
+    .navbar li a{
+        color: black;
+        font-size: 100%;
+    }
+
+    .showing{
+        max-height: 30em;
+    }
+
+    nav ul li{
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    nav.black ul li a:hover{
+        width: 100%;
+        border-bottom: 2px solid green;
+        
+    }
+}
+/* ----------------------------------------- */
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .card img{
+      width: 100%;
+      height: 100%;
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+/* ----------------------------------------- */
+
+
+.swiper-container {
+    width: 100%;
+    /* padding-top: 50px; */
+     /*padding-bottom: 50px; */
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background: #000;
+  }
+
+  .swiper-slide img{
+      width: 100%;
+      height: 100%;
+  }
+
+/* ------------------------------------------ */
+
+.press{
+    background-color: rgb(230, 230, 230);
+}
+
+
+
+@media(max-width:1200px){
+    .hero-text-box{
+        padding: 0 2%;
+        width: 100%;
+    }
+
+    .row{
+        padding: 0 2%;
+    }
+}

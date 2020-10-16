@@ -1,0 +1,39 @@
+html{
+    scroll-behavior: smooth;
+    color: #555;
+    font-weight: 300;
+    font-size: 30px;
+    font-family: 'Cairo', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+p{
+    font-weight: 100;
+}
+.image-section{
+    display: block;
+    text-align: center;
+}
+
+
+h4{
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.points{
+    margin-top: 20px;
+}
+
+i{
+    margin-right: 10px;
+}
+
+i:hover{
+    color: green;
+    cursor: pointer;
+}
+
+.points p{
+    font-style: italic;
+}
