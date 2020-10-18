@@ -690,6 +690,9 @@ footer{
     .hero-text-box{
         padding: 0 2%;
         width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
     }
 
     .row{
