@@ -144,7 +144,7 @@ p{
 
 .navbar.black ul li a:hover{
     width: 100%;
-    border-bottom: 2px solid transparent;
+    
     
 }
 
@@ -183,10 +183,10 @@ p{
     transition: border-bottom 0.2s;
 }
 
-/* .navbar li a:hover,
+.navbar li a:hover,
 .navbar li a:active {
     border-bottom: 2px solid green;
-} */
+}
 
 
 /* To the top button */
@@ -217,6 +217,7 @@ header{
 } 
 
 .hero-text-box{
+    /* text-align: center; */
     position: absolute;
     width: 1140px;
     top: 70%;
@@ -230,8 +231,21 @@ header{
     font-weight: 100;
 }
 
+.btn1{
+    position: absolute;
+    top: 75%;
+    left:40%;
+}
+
+.btn2{
+    position: absolute;
+    top: 75%;
+    left: 60%;
+}
+
 .btn:link,
 .btn:visited{
+    position: absolute;
     margin-top: 2%;
     display: inline-block;
     padding: 10px 30px;
@@ -516,6 +530,14 @@ footer{
     font-size: 60%;
 }
 
+
+
+
+/* .slideshow{
+    position: relative;
+    height: 100%;
+} */
+
 /* -------- */
 
 
@@ -591,6 +613,20 @@ footer{
       width: 100%;
       height: 100%;
   }
+
+  .card1{
+    background: white;
+}
+.card1 p{
+    padding: 10px;
+    font-size: 50%;
+    line-height: 25px;
+}
+
+.card1 a{
+    text-decoration: none;
+    color: green;
+}
   
   /* Add some padding inside the card container */
   .container {
@@ -634,7 +670,7 @@ footer{
     background-size: cover;
     width: 300px;
     height: 300px;
-    background: #000;
+    background: white;
   }
 
   .swiper-slide img{
