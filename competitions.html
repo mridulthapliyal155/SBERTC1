@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Resources/css/style.css">
+    <link rel="stylesheet" href="Vendors/css/Grid.css">
+    <link rel="stylesheet" href="Vendors/css/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+    
+        .swiper-container {
+          width: 100%;
+          height: 500px;
+        }
+    
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+    
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+
+        .home_image{
+           display: block;
+           text-align: center;
+       }
+       .home_image img{
+           margin-top: 30px;
+           height: auto;
+       }
+
+       .comp{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+       .card button{
+        border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #2E5775;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+    font-size: 80%;
+    }
+
+    .card button:hover {
+    opacity: 0.7;
+    }
+    .card p{
+        padding: 2px;
+    }
+
+    button a{
+        text-decoration: none;
+        color: white;
+    }
+      </style>
+    
+    <title>Competitons</title>
+</head>
+<body>
+    <div class="home_image">
+        <a href="index.html"><img src="Resources/img/sbertc_logo_full.png" alt=""></a>
+    </div>
+    <section class="slide-share">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <h2>Competitions</h2>
+        </div>
+        <div class="row comp">
+            <div class="card" style="width: 300px;">
+                <h3>Tye</h3>
+                <p>TiE Young Entrepreneurs (TYE) program was jointly conducted by SBERTC, IIT Kanpur.</p>
+                <button> <a href="Tie.html"> See more</a></button>
+            </div>
+
+            <div class="card" style="width: 300px;">
+                <h3>Megabucks</h3>
+                <p>A competition for Management students, with its first session on Ideation and Entrepreneurship.</p>
+                <button> <a href="Megabucks.html"> See more</a></button>
+            </div>
+        </div>
+    </section>
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <h4>Company</h4>
+                    <ul class="footer-points">
+                        <li><a href="about-us.html" target="_blank">About us</a></li>
+                        <li><a href="" target="_blank">Archives</a></li>
+                        <li><a href="contact-us.html" target="_blank">Contact us</a></li>
+                        <li><a href="teams.html" target="_blank"><b> <i>Our Team</i></b></a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-3">
+                   <h4>SBERTC</h4>
+                    <p class="footer-address">318 IME Building <br> IIT Kanpur <br> Kanpur-208016 (India) <br> 0512-2596932 <br> sbertc@iitk.ac.in </p>
+                </div>
+                <div class="col span-1-of-3">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>  
+            
+            <p class="copyright"> Copyright &#169; 2020 SBERTC</p>
+        </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+</body>
+</html>
