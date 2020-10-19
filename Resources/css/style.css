@@ -13,7 +13,7 @@ html{
     scroll-behavior: smooth;
     color: #555;
     font-size: 30px;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
 }
 
@@ -116,7 +116,6 @@ p{
     /* background-color: white; */
     list-style: none;
     overflow: hidden;
-    color: black;
     padding: 0;
     text-align: end;
     margin: 0;
@@ -132,6 +131,7 @@ p{
 .navbar li a{
     color: white;
     font-size: 100%;
+
 }
 
 /* .navbar li a{
@@ -144,8 +144,6 @@ p{
 
 .navbar.black ul li a:hover{
     width: 100%;
-    
-    
 }
 
 .navbar ul li{
@@ -181,12 +179,17 @@ p{
     font-size: 90%;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
+    border: 1px solid #2E5775;
+    padding: 10px;
+    border-radius: 50px;
 }
 
-.navbar li a:hover,
-.navbar li a:active {
-    border-bottom: 2px solid green;
-}
+.navbar li a:link:hover,
+.navbar li a:visited:hover{
+    background-color: #2E5775;
+    color: white;
+} 
+
 
 
 /* To the top button */
@@ -209,7 +212,7 @@ p{
 
 
 header{
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("img/Hero\ image.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("img/Hero\ image.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -231,22 +234,11 @@ header{
     font-weight: 100;
 }
 
-.btn1{
-    position: absolute;
-    top: 80%;
-    left: 25%;
-    /* transform: translate(-50%, -80%); */
-}
-
-.btn2{
-    position: absolute;
-    top: 80%;
-    left: 60%;
-}
 
 .btn:link,
 .btn:visited{
-    position: absolute;
+    display: block;
+    /* position: absolute; */
     margin-top: 2%;
     display: inline-block;
     padding: 10px 30px;
