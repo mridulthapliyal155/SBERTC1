@@ -11,7 +11,7 @@
 html{
     scroll-behavior: smooth;
     color: #555;
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
 }
@@ -222,9 +222,10 @@ header{
     /* text-align: center; */
     position: absolute;
     width: 1140px;
+    margin: auto;
     top: 80%;
-    left: 50%;
-    transform: translate(-50%, -80%);
+    left: 55%;
+    transform: translate(-55%, -80%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -754,5 +755,8 @@ footer{
         width: 100%;
         border-bottom: 2px solid green;
         
+    }
+    img{
+        width: 100%;
     }
 }
