@@ -61,6 +61,43 @@
         text-decoration: none;
         color: white;
     }
+
+#mySidenav a {
+  position: fixed;
+  left: -70px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 50%;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
+}
+
     @media(max-width: 580px){ 
         .flip-card{
             width: 100%;
@@ -94,6 +131,8 @@
 
             
         </div>  
+
+
         <div class="row">
             <div class="col span-2-of-3 box">
                 <h3>Major Domains</h3>
@@ -114,6 +153,13 @@
             </div>
         </div>
     </section>
+    <!-- My side Navbar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html" id="about">Home</a>
+        <!-- <a href="#" id="blog">Blog</a>
+        <a href="#" id="projects">Projects</a>
+        <a href="#" id="contact">Contact</a> -->
+      </div>
 
     <section id="activity" class="research-section"> 
         <div class="row"> 
@@ -194,7 +240,7 @@
                 <div class="card-content">
                 <p>We provide state of the art training programs both at elementary and advanced level for students & faculties and existing & potential entrepreneurs.</p>
                 </div>
-                <p> <a href="workshops.html" target="_blank"><button>See more</button></a></p>
+                <p> <a href="workshops.html" ><button>See more</button></a></p>
             </div>
             </div>
             <div class="col span-1-of-3 research">
@@ -205,7 +251,7 @@
                 <p> TiE Young Entrepreneur programme is being organized by SBERTC, IIT Kanpur every year since 8 years now in association with TiE UP at IIT Kanpur. </p>
                 </div>
 
-                <p> <a href="Tie.html" target="_none"  style="text-decoration: none; color: white;"><button>See more</button></a></p>
+                <p> <a href="Tie.html" style="text-decoration: none; color: white;"><button>See more</button></a></p>
             </div>
             </div>
 
@@ -216,7 +262,7 @@
                     <div class="card-content">
                     <p>Syndicate bank Entrepreneurship research and training centre, IIT Kanpur launched MEGABUCKS, a Business Plan competition for Management students</p>
                     </div>
-                    <p> <a href="Megabucks.html" target="_none" style="text-decoration: none; color: white;"> <button>See more</button></a></p>
+                    <p> <a href="Megabucks.html" style="text-decoration: none; color: white;"> <button>See more</button></a></p>
                 </div>
             </div>
         </div>
@@ -289,10 +335,10 @@
             <div class="col span-1-of-3">
                 <h4>Company</h4>
                 <ul class="footer-points">
-                    <li><a href="about-us.html" target="_blank">About us</a></li>
-                    <li><a href="" target="_blank">Archives</a></li>
-                    <li><a href="contact-us.html" target="_blank">Contact us</a></li>
-                    <li><a href="teams.html" target="_blank"><b> <i>Our Team</i></b></a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="">Archives</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
+                    <li><a href="teams.html"><b> <i>Our Team</i></b></a></li>
                 </ul>
             </div>
             <div class="col span-1-of-3">
@@ -311,5 +357,6 @@
         
         <p class="copyright"> Copyright &#169; 2020 SBERTC</p>
     </footer>
+
 </body>
 </html>

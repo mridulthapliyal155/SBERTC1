@@ -83,6 +83,37 @@
        .main-content{
         padding-top: 0px;
     }
+
+    #mySidenav a {
+  position: fixed;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 55%;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
     @media(max-width: 580px){ 
         .swiper-container {
           width: 100%;
@@ -116,6 +147,11 @@
         </div>
     </section>
 
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html" id="about">Home</a>
+        <a href="What_we_do.html" id="blog">Go Back</a>
+      </div>
+
     <section class="main-content">
         <div class="row">
             <h2>Workshops</h2>
@@ -135,10 +171,10 @@
                 <div class="col span-1-of-3">
                     <h4>Company</h4>
                     <ul class="footer-points">
-                        <li><a href="about-us.html" target="_blank">About us</a></li>
+                        <li><a href="about-us.html">About us</a></li>
                         <li><a href="" target="_blank">Archives</a></li>
-                        <li><a href="contact-us.html" target="_blank">Contact us</a></li>
-                        <li><a href="teams.html" target="_blank"><b> <i>Our Team</i></b></a></li>
+                        <li><a href="contact-us.html">Contact us</a></li>
+                        <li><a href="teams.html"><b> <i>Our Team</i></b></a></li>
                     </ul>
                 </div>
                 <div class="col span-1-of-3">
