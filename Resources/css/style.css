@@ -271,14 +271,19 @@ header{
 
 .btn-full:link,
 .btn-full:visited{
-    background-color: #2E5775;
+    background-color: white;
     border: 1px solid #2E5775;
-    color: #fff;
+    color: black;
+    transition: background-color 1s, color 1s ease-in-out;
+    /* opacity:0.5; */
 }
 
 .btn-full:hover,
 .btn-full:active{
-    background-color: rgb(57, 108, 144);
+    /* border: 5px solid green; */
+    background-color: #2E5775;
+    color: white;
+    
 }
 
 /* .btn2{
