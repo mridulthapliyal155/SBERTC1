@@ -96,11 +96,10 @@ p{
 /* ------------- NAV BAR ------------------ */
 
 .logo{
-    position: fixed;
+    /* position: fixed; */
     float: left;
     margin: 18px 36px;
     padding: 2px;
-    /* background-color: white; */
     border-radius: 10px;
     opacity: 1;
 }
@@ -109,7 +108,6 @@ p{
     background-color: white;
     border-radius: 1px;
     border-radius: 2px;
-    /* margin: 5px; */
 }
 
 .logo .sec{
@@ -117,14 +115,37 @@ p{
     width: 80px;
 }
 
+
+
+  .main{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2%;
+      flex-wrap: wrap;
+  }
+
+  .main .logo2{
+      /* width: 100%;
+      height: 100%; */
+      height: 100px;
+  }
+
+  .main .logo1{
+      background-color: white;
+      padding: 5px;
+      border-radius: 5px;
+  }
+
+  
+
 .navbar{
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 90;
     color: white;
 }
 .navbar ul{
-    /* background-color: white; */
     list-style: none;
     overflow: hidden;
     padding: 0;
@@ -133,28 +154,10 @@ p{
     transition: 1s;
 }
 
-.navbar.black ul{
-    background-color: white;
-    width: 100%;
-}
-
 
 .navbar li a{
-    color: white;
     font-size: 100%;
 
-}
-
-/* .navbar li a{
-    color: white;
-} */
-
-.navbar.black ul li a{
-    color: black;
-}
-
-.navbar.black ul li a:hover{
-    width: 100%;
 }
 
 .navbar ul li{
@@ -163,24 +166,10 @@ p{
     font-size: 60%;
 }
 
-
-
-.menu-icon{
-    width: 100%;
-    background: white;
-    text-align: right;
-    padding: 15px 24px;
-    cursor: pointer;
-    color: black;
-    display: none;
-}
-
 .main-nav li{
     display: inline-block;
     margin-left: 60px;
 }
-
-
 
 .navbar li a:link,
 .navbar li a:visited {
@@ -193,6 +182,7 @@ p{
     border: 1px solid #2E5775;
     padding: 10px;
     border-radius: 50px;
+    color: black;
 }
 
 .navbar li a:link:hover,
@@ -200,6 +190,36 @@ p{
     background-color: #2E5775;
     color: white;
 } 
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    height: 60px;
+}
+/* .sticky .navbar{
+    display: flex;
+} */
+
+.sticky .navbar li a:link,
+.sticky .navbar li a:visited {
+    padding: 8px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    border: 1px solid #2E5775;
+    padding: 10px;
+    border-radius: 50px;
+    color: black;
+}
+
+.sticky .navbar .main{
+    display: none;
+}
 
 
 
