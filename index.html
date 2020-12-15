@@ -248,6 +248,8 @@
         <script>
         
         $(document).ready(function(){
+            $('.menu').css("display","none");
+            $('.logo').css("display",'none')
             $('.section-js-feature').waypoint(function(direction){
                 if (direction == "down"){
                     $('.navbar').addClass('sticky');
