@@ -123,6 +123,7 @@ p{
       align-items: center;
       padding: 2%;
       flex-wrap: wrap;
+      text-align: center;
   }
 
   .main .logo2{
@@ -220,6 +221,7 @@ p{
 .sticky .navbar .main{
     display: none;
 }
+
 
 
 
