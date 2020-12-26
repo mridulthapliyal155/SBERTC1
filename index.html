@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <style> 
+#mySidenav a {
+  position: fixed;
+  right: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 55%;
+  color: white;
+  border-radius: 5px 0 0 5px;
+
+}
+
+#mySidenav a:hover {
+  right: 0;
+}
+
+#about {
+  top: 80%;
+  background-color: #4CAF50;
+}
+
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -25,6 +50,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>SBERTC</title>
+
 </head>
 <body>
     <header>
@@ -59,11 +85,16 @@
         </div>
 
         <a href="#nstedb"><i class="arrow down"></i></a>
+
+        <div id="mySidenav" class="row sidenav js-what-we-do">
+            <a href="index.html" id="about">What we do</a>
+        </div>
     </header>
 
         <div class="row">
             <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
         </div>
+
                     
         <section id="nstedb" class="section-js-feature">
             <div class="row other-screeen">
@@ -71,6 +102,7 @@
                 <iframe src="https://simplebooklet.com/nstedbimpact#page=0" frameborder="0" title="nstedbimpact">
                 </iframe>
         </section>
+        
 
 
         <section id="press">
@@ -204,22 +236,6 @@
             
         </section>
 
-        <!-- <section id="more">
-            <div class="row">
-                <h2>more</h2>
-                </p>
-            </div>
-
-
-                    <div class="more-card">
-                        <a href="#"><img src="Vendors/Image/More/Archives.png" alt="publications"></a>
-                        <div class="container">
-                         <h3> Archives </h3>
-                        </div> 
-                      </div>
-            </div>
-        </section>
- -->
         <footer>
             <div class="row">
                 <div class="col span-1-of-3">
@@ -270,13 +286,25 @@
                 }
             }, {offset: '90%' });
         });
-            function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-                                }
+            $('#about').css("display","none");
+            $('.js-what-we-do').waypoint(function(direction){
+                if (direction == "down"){
+                    $('#about').css("display","block");  
+                } else{
+                    $('#about').css("display","none");
+                };
+            });
+       
 
-            function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            }
+
+
+            // function openNav() {
+            // document.getElementById("mySidenav").style.width = "250px";
+            //                     }
+
+            // function closeNav() {
+            // document.getElementById("mySidenav").style.width = "0";
+            // }
 
             $('.navbar a').on('click', function (e) {
                 if (this.hash !== '') {
@@ -312,6 +340,11 @@
             }
 
 
+            
+
+
+
+            // Swiper Library
             var swiper = new Swiper('.swiper-container', {
             effect: 'coverflow',
             grabCursor: true,
