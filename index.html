@@ -40,6 +40,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+
     <link rel="apple-touch-icon" sizes="180x180" href="Resources/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Resources/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Resources/favicons/favicon-16x16.png">
@@ -63,7 +65,7 @@
     <header>
 
         <nav class="navbar">
-            <div class="main">
+            <div class="main" data-aos="fade-down">
                 <img class="logo1" src="Resources/css/img/sbertc_logo.png" alt="SBERTC_LOGO">
                 <div class="text">
                     <h4 class="main-text">Syndicate Bank <span class="entrepreneur">Entrepreneurship</span> Research and Training Center</h5>
@@ -88,7 +90,7 @@
             </div>
         </nav>
         <div class="hero-text-box">
-            <p>Commited to finding answers for the fundamental question &  disseminating the knowledge fruits back to all the stakeholders in the entrepreneurial ecosystem.</p>
+            <p data-aos="fade-down">Commited to finding answers for the fundamental question &  disseminating the knowledge fruits back to all the stakeholders in the entrepreneurial ecosystem.</p>
             <a class="btn btn-full btn1" href="What_we_do.html" target="_blank">&nbsp;&nbsp;&nbsp;What we do&nbsp;&nbsp;&nbsp;</a>
             <a class="btn btn-ghost btn2" href="#nstedb">Latest releases</a>
         </div>
@@ -118,29 +120,31 @@
         <section id="press">
             <div class="row">
                 <h2> Press Releases </h2>
-                <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"> <img src="Vendors/Image/sbertc_in_press/workshop.jpg" alt="">
-                    </div>
-                    
-                    <div class="swiper-slide"><img src="Vendors/Image/sbertc_in_press/sssdc.jpg" alt=""></div>
-        
-                    <div class="swiper-slide"><img src="Vendors/Image/sbertc_in_press/sssdc2.jpg" alt="">
-                    </div>
-                    
-                    <div class="swiper-slide"><img src="Vendors/Image/sbertc_in_press/hbtu.png" alt=""></div>
-                                        
-                    <div class="swiper-slide"><img src="Vendors/Image/sbertc_in_press/NEA.png" alt=""></div>
-
-                    <div class="swiper-slide"><img src="Vendors/Image/sbertc_in_press/company.png" alt="">
-                    </div>
-                    
-                    <div class="swiper-slide"><img src="Vendors/Image/sbertc_in_press/TYE.png" alt=""></div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
             </div>
-        </div>
+            <div class="row" data-aos="fade-left">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"> <img src="Vendors/Image/sbertc_in_press/workshop.jpg" alt="">
+                        </div>
+                        
+                        <div class="swiper-slide"><img src="Vendors/Image/sbertc_in_press/sssdc.jpg" alt=""></div>
+            
+                        <div class="swiper-slide"><img src="Vendors/Image/sbertc_in_press/sssdc2.jpg" alt="">
+                        </div>
+                        
+                        <div class="swiper-slide"><img src="Vendors/Image/sbertc_in_press/hbtu.png" alt=""></div>
+                                            
+                        <div class="swiper-slide"><img src="Vendors/Image/sbertc_in_press/NEA.png" alt=""></div>
+    
+                        <div class="swiper-slide"><img src="Vendors/Image/sbertc_in_press/company.png" alt="">
+                        </div>
+                        
+                        <div class="swiper-slide"><img src="Vendors/Image/sbertc_in_press/TYE.png" alt=""></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
       
         </section>
 
@@ -150,7 +154,7 @@
             <div class="row">
                 <h2>Collaboration & partenership</h2>
             </div>
-            <div class="row image">
+            <div class="row image" data-aos="fade-right">
                 <div class="col span-1-of-3">
                     <a href="https://erp.aktu.ac.in/webpages/kyc/AboutAKTU.aspx" target="_blank"><img src="Vendors/Image/logos/client-1.png" alt="AKTU"></a>
                 </div>
@@ -167,7 +171,7 @@
             <div class="row">
                 <h2>Recent Publications</h2>
             </div>
-            <div class="row">
+            <div class="row" data-aos="zoom-in">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
@@ -299,7 +303,7 @@
             <div class="row">
             <h2>Meet our team</h2>
         </div>
-        <div class="row team">
+        <div class="row team" data-aos="slide-up">
             <div class="col span-1-of-4">
                 <img src="Vendors/Image/B-V-phani.jpeg" alt="B-V-Phani">
                 <p class="name"> B.V. Phani</p>
@@ -340,7 +344,7 @@
                 <h2>Contact Us</h2>
             </div>
 
-            <div class="row">
+            <div class="row" data-aos="zoom-in">
                 <div class="col span-1-of-3">
                     <div class="card">
                         <p> <a href="."><button> Address </button></a></p>
@@ -405,6 +409,7 @@
   crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
         <script src="Vendors/js/jquery.waypoints.min.js"></script>
 
         <script type="text/javascript">
@@ -521,6 +526,10 @@
                 disableOnInteraction: false,
             }
             });
+
+            AOS.init({
+                duration: 1200,
+            })
 </script>
 </body>
 </html>
