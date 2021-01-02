@@ -8,7 +8,7 @@
     position: fixed;
     right: -100px;
     transition: 0.3s;
-    padding: 15px;
+    padding: 11px;
     /* width: 110px; */
     text-decoration: none;
     font-size: 55%;
@@ -20,6 +20,7 @@
     box-shadow: 8px 8px 8px black;
     display: inline-block;
     font-size: 60%;
+    transition: background-color 1s hover 2s;
 }
 
 #mySidenav a:hover{
@@ -450,11 +451,18 @@
         });
 
             $('#mySidenav a').css("display","none");
+            // $('#mySidenav a').css("background-color","white");
             $('.js-what-we-do').waypoint(function(direction){
                 if (direction == "down"){
+                    $('.btn-full').css("background-color","white");
+                    $('.btn-full').css("color","black");
                     $('#mySidenav a').css("display","block");  
+                    $('#mySidenav a').css("background-color","white");
+                    $('#mySidenav a').css("background-color","#2E5775","transition","1s");
                 } else{
                     $('#mySidenav a').css("display","none");
+                    $('.btn-full').css("background-color","#2E5775");
+                    $('.btn-full').css("color","white");
                 }; 
             });
        

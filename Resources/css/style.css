@@ -334,9 +334,9 @@ span{
 
 .btn-full:link,
 .btn-full:visited{
-    background-color: white;
+    background-color: #2E5775;
     border: 1px solid #2E5775;
-    color: black;
+    color: white;
     transition: background-color 1s, color 1s ease-in-out;
     /* opacity:0.5; */
 }
