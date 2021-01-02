@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 
+
     <style> 
 
 #mySidenav a{
     position: fixed;
-    right: -90px;
+    right: -100px;
     transition: 0.3s;
     padding: 15px;
     /* width: 110px; */
@@ -33,7 +33,7 @@
   background-color: #2E5775;
 }
 
-    </style> -->
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -97,10 +97,10 @@
 
         <a href="#nstedb"><i class="arrow down"></i></a>
 
-        <!-- <div id="mySidenav" class="row sidenav js-what-we-do">
+        <div id="mySidenav" class="row sidenav js-what-we-do">
             <a href="What_we_do.html" id="about"><img src="Vendors/Image/logos/small_logo.png" alt="">
             What we do</a>
-        </div> -->
+        </div>
     </header>
 
         <div class="row">
@@ -388,7 +388,7 @@
                 </div>
                 <div class="col span-1-of-3">
                    <h4>SBERTC</h4>
-                    <p class="footer-address">300 IME Building <br> IIT Kanpur <br> Kanpur-208016 (India) <br> 0512-2596932 <br> sbertc@iitk.ac.in </p>
+                    <p class="footer-address">Room no. 300,301,318,320 <br> IME Building <br> IIT Kanpur <br> Kanpur-208016 (India) <br> 0512-2596932 <br> sbertc@iitk.ac.in </p>
                 </div>
                 <div class="col span-1-of-3">
                     <ul class="social-icons">
@@ -449,14 +449,14 @@
             }, {offset: '90%' });
         });
 
-            // $('#mySidenav a').css("display","none");
-            // $('.js-what-we-do').waypoint(function(direction){
-            //     if (direction == "down"){
-            //         $('#mySidenav a').css("display","block");  
-            //     } else{
-            //         $('#mySidenav a').css("display","none");
-            //     }; 
-            // });
+            $('#mySidenav a').css("display","none");
+            $('.js-what-we-do').waypoint(function(direction){
+                if (direction == "down"){
+                    $('#mySidenav a').css("display","block");  
+                } else{
+                    $('#mySidenav a').css("display","none");
+                }; 
+            });
        
 
 
