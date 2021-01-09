@@ -7,6 +7,7 @@
     <title>What we do</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Resources/css/style.css">
+    <link rel="stylesheet" href="Resources/css/what-we-do.css">
     <link rel="stylesheet" href="Vendors/css/Grid.css">
     <link rel="stylesheet" href="Vendors/css/normalize.css">
 
@@ -121,35 +122,38 @@
         <div class="image-section">
            <a href="index.html"> <img src="Resources/img/sbertc_logo_full.png" alt="SBERTC logo"></a>
         </div>
-        <div class="row">
-           
+        <div class="row">   
+            <div class="long-card">
                 <p class="long-text"> 
                     <q>SBERTC’s commitment towards nation building through targeting grassroot problems through research projects and training on innovativeness, design thinking and business development training programs and workshops for both livelihood and opportunity based entrepreneurship. 
-                We help industry bodies and governments in terms of policy assessment and prescription to better support innovation that fuels growth and builds a better society.
+                    We help industry bodies and governments in terms of policy assessment and prescription to better support innovation that fuels growth and builds a better society.
             </q>
             </p>
-
-            
+            </div>
         </div>  
 
 
         <div class="row">
-            <div class="col span-2-of-3 box">
-                <h3>Major Domains</h3>
-                    <p> <i class="fa fa-star-o" aria-hidden="true"></i> Entrepreneurial & Innovation Policy Prescription & Assessment</p>
-                    <p><i class="fa fa-star-o" aria-hidden="true"></i> Innovation Ecosystem (both livelihood & high potential entrepreneurship)</p>
-                
-                    <p><i class="fa fa-star-o" aria-hidden="true"></i> Working for Financial Inclusion</p>
-                    <p><i class="fa fa-star-o" aria-hidden="true"></i> Environment (green entrepreneurship)</p>
-                    <p><i class="fa fa-star-o" aria-hidden="true"></i> Gender equality</p>
-                </ul>
+                <div class="col span-2-of-3 box">
+                    <div class="domain-card">
+                        <h3>Major Domains</h3>
+                            <p> <i class="fa fa-star-o" aria-hidden="true"></i> Entrepreneurial & Innovation Policy Prescription & Assessment</p>
+                            <p><i class="fa fa-star-o" aria-hidden="true"></i> Innovation Ecosystem (both livelihood & high potential entrepreneurship)</p>
+                        
+                            <p><i class="fa fa-star-o" aria-hidden="true"></i> Working for Financial Inclusion</p>
+                            <p><i class="fa fa-star-o" aria-hidden="true"></i> Environment (green entrepreneurship)</p>
+                            <p><i class="fa fa-star-o" aria-hidden="true"></i> Gender equality</p>
+                        </ul>
+                </div>
             </div>
 
             <div class="col span-1-of-3 box">
-                <h3>Two major approaches</h3>
+                <div class="domain-card">
+                    <h3>Two major approaches</h3>
                 <p><i class="fa fa-star-o" aria-hidden="true"></i> Collective intelligence (peer to peer) 
                 </p>
                 <p><i class="fa fa-star-o" aria-hidden="true"></i> RCT (Randomized control trials)</p>
+                </div>
             </div>
         </div>
     </section>
@@ -165,7 +169,60 @@
         <div class="row"> 
             <h2>Research Activities</h2>
         </div>
-        <div class="row">
+            <div class="row team">
+                <ul>
+                    <li class="list active" data-filter="all">All</li>
+                    <li class="list" data-filter="rcp">Recently completed projects</li>
+                    <li class="list" data-filter="op">Ongoing projects</li>
+                    <li class="list" data-filter="up">Upcoming projects</li>
+                </ul>
+                <div class="product">
+                    <div class="itemBox rcp">
+                        <div class="item-card">
+                            <p class="name">DST-NSTEDB Impact Assessment</p>
+                        </div>
+                    </div>
+                    <div class="itemBox op">
+                        <div class="item-card">
+                        <p class="name">Implementation Challenges and Innovation Effectiveness in Entrepreneurial Ecosystem: Global Frameworks and Local Dynamics. An Index for measuring Entrepreneurial Potential Created (EPC) by policy intervention.</p>
+                    </div>
+                    </div>
+                    <div class="itemBox up">
+                        <div class="item-card">
+                            <p class="name">A System-wide Model of Startup Facilitation using Encrypted Networking in an Entrepreneurial Ecosystem (EE) and Building of a national repository with individual Startup scores.</p>
+                        </div>
+                    </div>
+
+                    <div class="itemBox rcp">
+                        <div class="item-card">
+                            <p class="name"> Concept note for Startup Policy, GoUP.</p>
+                        </div>
+                    </div>
+
+                    <div class="itemBox rcp">
+                        <div class="item-card">
+                            <p class="name">Roadmap for CSTUP, GoUP.</p>
+                        </div>
+                    </div>
+        
+                    <div class="itemBox up">
+                        <div class="item-card">
+                            <p class="name"> Sustainable Development Goals(SDG) & entrepreneurship</p>
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>
+        </section>
+
+
+
+
+
+
+
+
+        <!-- <div class="row">
             <div class="col span-1-of-3">
                 <div class="flip-card">
                     <div class="flip-card-inner">
@@ -212,7 +269,7 @@
             </div>
             
                     
-        </div>
+        </div> -->
 
     </section>
 
@@ -297,7 +354,7 @@
                   </div>
 
                 </div>
-                <p style="text-align: end;"><a href="#">See more</a></p>
+                <p style="text-align: end;"><a href="https://neas.gov.in/" target="_blank">See more</a></p>
             </div>
         </div>
 
@@ -358,5 +415,26 @@
         <p class="copyright"> Copyright &#169; 2020 SBERTC</p>
     </footer>
 
+
+    <script>
+    $(document).ready(function(){
+        $('.list').click(function(){
+        const value = $(this).attr('data-filter');
+        if(value == 'all'){
+        $('.itemBox').show('1000');
+        }
+        else{
+        $('.itemBox').not('.'+value).hide('1000');
+        $('.itemBox').filter('.'+value).show('1000');
+        }
+        });
+
+        $('.list').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        });
+    });
+    </script>
 </body>
+
+
 </html>
