@@ -252,55 +252,6 @@
             
         </section>
 
-
-        <!-- <section id="team" class="team">
-            <div class="row">
-                <h2>Meet our team</h2>
-            </div> -->
-            <!-- <div class="row">
-                <ul>
-                    <li class="list active" data-filter="all">All</li>
-                    <li class="list" data-filter="boss">Boss</li>
-                    <li class="list" data-filter="employee">Employee</li>
-                    <li class="list" data-filter="phd">phd</li>
-                    <li class="list" data-filter="intern">Intern</li>
-                </ul>
-                <div class="product">
-                    <div class="itemBox boss top">
-                        <img src="Vendors/Image/B-V-phani.jpeg" alt="">
-                        <p class="name">BV phani <br> Professor</p>
-                    </div>
-                    <div class="itemBox employee top">
-                        <img src="Vendors/Image/thumbnail.jpg" alt="">
-                        <p class=" name">ABC</p>
-                    </div>
-                    <div class="itemBox employee top ">
-                        <img src="Vendors/Image/member.jpg" alt="">
-                        <p class="name">DEF</p>
-                    </div>
-                    <div class="itemBox phd top">
-                        <img src="Vendors/Image/member.jpg" alt="">
-                        <p class="name">GHI</p>
-                    </div>
-                    <div class="itemBox employee bottom">
-                        <img src="Vendors/Image/member.jpg" alt="">
-                        <p class="name"> JHI</p>
-                    </div>
-
-                    <div class="itemBox phd bottom"><img src="Vendors/Image/ram.jpeg" alt="">
-                        <p class="name">Ram sir</p>
-                    </div>
-                    <div class="itemBox phd bottom"><img src="Vendors/Image/member.jpg" alt="">
-                        <p class="name"> JHI</p>
-                    </div>
-                    <div class="itemBox intern bottom">
-                        <img src="Vendors/Image/member.jpg" alt="">
-                        <p class="name"> JHI</p>
-                    </div>
-                </div>
-        </div>
-        </section> -->
-
         <section id="team">
             <div class="row">
             <h2>Meet our team</h2>
@@ -417,22 +368,6 @@
         <script type="text/javascript">
         
         $(document).ready(function(){
-
-            $('.list').click(function(){
-                const value = $(this).attr('data-filter');
-                if(value == 'all'){
-                    $('.itemBox').show('1000');
-                }
-                else{
-                    $('.itemBox').not('.'+value).hide('1000');
-                    $('.itemBox').filter('.'+value).show('1000');
-                }
-            });
-
-            $('.list').click(function(){
-                $(this).addClass('active').siblings().removeClass('active');
-            });
-
 
             $('.menu').css("display","none");
             $('.logo').css("display",'none')
